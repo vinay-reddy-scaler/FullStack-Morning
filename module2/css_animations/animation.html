@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+        }
+        .container{
+            height: 500px;
+            width: 500px;
+            position: relative;
+            /* transform: rotate(50deg); */
+        }
+        .box{
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation-name: rotate;
+            animation-duration: 3s;
+        
+        animation: move-box 3s linear 1s infinite alternate;
+            border-radius: 50%;
+        }
+
+        @keyframes move-box{
+            0%{
+                left:0px;
+                top:0px;
+                background-color: blue;
+            }
+            25%{
+                left:0px;
+                top:100%;
+                transform: translateY(-100%);
+                /* border-radius: 50%; */
+                background-color: red;
+            }
+            50%{
+                left:100%;
+                top:100%;
+                transform: translate(-100%,-100%);
+                background-color:darkgray;
+            }
+            75%{
+                left:100%;
+                top:0px;
+                transform: translateX(-100%);
+                /* border-radius: 20px; */
+                background-color: green;
+            }
+            100%{
+                left:0px;
+                top:0px;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

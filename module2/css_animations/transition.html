@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: yellow;
+            height: 500px;
+            width: 500px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            transition-property: width;
+            /* background-color: red; */
+            transition: all 10s ease;
+            transition-delay: 2s;
+        }
+        .one{
+            /* width: 50px; */
+            background-color: green;
+            
+        }
+        .two{
+            background-color: aqua;
+            /* transition-timing-function: ease-in; */
+        }
+        .three{
+            background-color: yellowgreen;
+        }
+        .box:hover{
+            width: 1000vw;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+    </div>
+</body>
+</html>

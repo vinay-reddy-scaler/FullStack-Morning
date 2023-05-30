@@ -1,0 +1,342 @@
+:root{
+    --primary: #5DA9E9;
+    --bgDark: rgb(0, 45, 107);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(0, 59, 50);
+    --bgLight: rgb(27, 81, 186);
+    --pink: rgb(226, 63, 91);
+    --footerBg: rgb(32,39,56);
+    --violet:rgb(48, 44, 118);
+    --brown:rgb(178, 116, 0);
+    --footerText:rgb(141,177,203);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bgLight);
+    padding: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--white);
+    margin:0 0.5rem;
+    text-align: center;
+}
+
+nav a:hover{
+    color: var(--secondary);
+}
+
+nav .center{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img{
+    width: 150px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.right img{
+    width: 30px;
+    height: 30px;
+}
+
+.right button{
+    height: 30px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+section .banner{
+    position: relative;
+    justify-content: left;
+    
+    display: flex;
+    background-color: var(--bgDark);
+    justify-content: left;
+    align-items: center;
+}
+.banner>img{
+    padding: 2rem ;
+}
+
+.banner .typo {
+    margin-left: -15rem;
+    margin-top: -10rem;
+    color: var(--white);
+}
+.banner .typo h1{
+    font-size: 1.75rem;
+    font-weight: 200;
+}
+.banner .typo p{
+    line-height: 2;
+    font-weight: 100;
+    font-size: 1.25rem;
+}
+.bottom{
+    position: absolute;
+    height:3rem; 
+    width: 100vw;
+    background-color: var(--bgLight);
+    bottom: 0rem; 
+}
+.ads{
+    position: absolute;
+    display: flex;
+    bottom: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    background-color: var(--white);
+    height: 3rem;
+    width: 45rem;
+    left: 5rem;
+}
+.banner .ads div{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.form{
+    background-color: var(--white);
+    bottom: 1rem;
+    right: 2rem;
+    position: absolute;
+    
+    width: 30rem;
+    padding: 2rem;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    
+    /* height: 10vh; */
+   
+    justify-content: space-between;
+    line-height: 1.5rem;
+}
+.form h1 span, .form p span{
+    color: var(--pink);
+    line-height: 1.5rem;
+}
+.form p{
+    margin: 1rem;
+    margin-bottom:0.75rem ;
+}
+.form h1{
+    font-weight: 200;
+    font-size: 2rem;
+}
+.form .radio{
+    justify-content: space-between;
+    display: flex;
+    margin: 0.5rem;
+}
+
+.form .submit>button{
+    background-color: var(--pink);
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    border-style: none;
+}
+.form .top>input{
+    width: 100%;  
+    padding: 0.5rem;
+    margin-top: 0.75rem;
+    outline: none;    
+}
+.form .option select{
+padding: 0.5rem;
+margin-top: 0.25rem;
+    outline: none;  
+}
+.form .option input{
+    width: 76%;
+    padding: 0.5rem;
+    margin-top: 0.75rem;
+    outline: none;  
+}
+.submit span{
+    color: var(--pink);
+    font-size: 90%;
+}
+.form .text{
+    margin-top: 0.5rem;
+    font-size: 75%;
+    font-weight: 100;
+}
+.form .submit {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+section.courses>h1{
+    text-align: center;
+    font-weight: 150;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+section .course .container{
+    display: flex;
+    align-items: center;
+}
+section .container{
+    display: flex;
+}
+.sd{
+    background-color:var(--bgLight);
+
+}
+.course-heading{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    align-items: center;
+    /* line-height: 2rem; */
+    padding: 1rem;
+    height: 15%;
+    justify-content: space-evenly;
+}
+.ml{
+    background-color: var(--violet);
+}
+.degree{
+    background-color: var(--brown);
+}
+.course-heading img{
+    /* right:20rem; */
+    height: 40px;
+    width: 40px;
+}
+.course-container{
+    margin: 3rem;
+    width: 50%;
+}
+.course-heading h3{
+    margin: 1.5rem;
+
+    color: var(--white);
+    align-items:first baseline;
+}
+.course-detail{
+    /* margin: 1rem;
+    line-height: 1.rem; */
+    color: var(--secondary); 
+    padding: 2rem;
+    height: 65%;
+    overflow: auto;
+}
+.course-detail div p{
+    margin-bottom: 2rem;
+}
+.yoe span{
+    /* margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem; */
+    /* display: flex; */
+    align-items: center;
+}
+.course-detail h4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+.course-bottom div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    
+}
+.course-bottom{
+    margin-top: 2rem;
+}
+.course-bottom div p{
+    color: blue;
+    font-size: 1.5rem;
+    margin-left: -2rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem;
+    background-color: var(--footerBg);
+    
+}
+footer h4{
+    color: var(--white);
+    line-height: 1.5;
+    text-decoration: none;
+    font-size: 1.25;
+    margin-bottom: 1.5rem;
+}
+footer>div{
+    display: flex;
+    flex-direction:column;
+}
+footer a{
+    text-decoration: none;
+    color: var(--footerText);
+    line-height: 1.25;
+}
+footer .first .logo{
+    width: 80px;
+    height: 50px;
+    margin-bottom: 0rem;
+}
+footer p{
+    color: var(--white);
+}
+
+footer .first .interviewbit{
+    width: 180px;
+    height: 30px;
+    margin: 1rem 0;
+    margin-bottom: 0;
+}
+footer .first div div{
+    display: inline-block;
+    margin-right: 5px;
+}
+footer .first div div img{
+    width: 120px;
+}
+footer .first div>img{
+    width: 80px;
+    margin: 1rem 0;
+}
+
+
+

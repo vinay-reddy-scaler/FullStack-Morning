@@ -1,0 +1,43 @@
+@import "utility.css";
+:root{
+    --primary: #5DA9E9;
+    --bgDark: rgb(12,12,12);
+    --secondary: rgb(0,59,50);
+    --white: rgb(250,250,250);
+    --bgLight:rgb(190,181,181);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--bgDark);
+}
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.25 ease;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    /* padding: 2rem 2rem; */
+    /* justify-content: space-around; */
+}
+header nav{
+    padding: 2rem 0rem;
+    margin-left: 10rem;
+}
+header nav a:hover{
+    color: var(--primary);
+}
+header .logo{
+    margin-right: 3rem;
+    margin-top: -1rem;
+}
+header .hero img{
+    border-radius: 5rem;
+}
+header .Information{
+    color: var(--white);
+}
+
