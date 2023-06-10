@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>I am para</p>
+    <p>I am another para</p>
+    <div>
+        <h1> heading 1</h1>
+        <h2>heading2</h2>
+    </div>
+    <ul>
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+    </ul>
+    <button>say hello</button>
+</body>
+<script>
+    //read dom element  from js
+    let element = document.querySelectorAll("p")
+    console.log(element)
+    console.log(element[1].innerText)
+
+    //write div with hello text when button is clicked
+    let btn_tag = document.querySelector("button");
+    let body_tag = document.querySelector("body");
+    btn_tag.addEventListener("click", function () {
+        let div_tag = document.createElement("div");
+        div_tag.innerText = "Hello";
+        body_tag.appendChild(div_tag);
+    })
+
+    //update
+    let h1_tag = document.querySelector("h1");
+    h1_tag.innerText = "I am an updated heading"
+
+    //delete 
+    h1_tag.remove();
+
+
+    //add li with 6 in order
+
+    let li_tag = document.createElement("li")
+    li_tag.innerText = "6";
+    console.log(li_tag);
+    let ul_tag = document.querySelector("ul")
+    let all_li = document.querySelectorAll("li");
+    let before_li = all_li[6];
+    ul_tag.insertBefore(li_tag, before_li)
+    
+
+
+
+</script>
+
+</html>

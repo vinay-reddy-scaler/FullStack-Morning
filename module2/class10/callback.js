@@ -3,6 +3,6 @@ function hof(cb){
     cb()
 }
 function cb(){
-    console.log("i m cd")
+    console.log("i m call back function")
 }
 hof(cb)

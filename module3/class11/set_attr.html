@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="first">Hello iam a div tag</div>
+    <div id="the-div">I am ID </div>
+    <div id="the-double">
+        <button class="double">double</button>
+    </div>
+</body>
+<script>
+    // let p= document.createElement("p")
+    // p.innerText="I am Para"
+    // console.log(p)
+    // p.setAttribute("class","first second")
+    // let class_list = p.classList
+    // console.log(class_list)
+    // class_list.add('third')
+    // class_list.add('fourth')
+     //    Q Create a button that is destroyed by clicking on it but two new buttons are created in it's place.
+    let div = document.querySelector('#the-double')
+    window.addEventListener('click', function (event) {
+        if(event.target.classList.contains("double")){
+            event.target.remove()
+            let btn_1 = document.createElement("button");
+            btn_1.setAttribute("class","double");
+            btn_1.innerText="double"
+            div.appendChild(btn_1)
+
+            let btn_2 = document.createElement("button");
+            btn_2.setAttribute("class","double");
+            btn_2.innerText="double"
+            div.appendChild(btn_2)
+        }
+        console.log(event)
+        // btn_tag.remove()
+    })
+
+</script>
+
+</html>
